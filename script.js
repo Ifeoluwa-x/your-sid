@@ -14,10 +14,10 @@ function start() {
                 
                 return;
             }
-
+            
             const timeDifference = targetDate - now;
 
-            if(timeDifference < -1) {
+            if(timeDifference <= 0) {
                 // console.log(targetDate)
                alert("Date is Expired");
             }
