@@ -26,7 +26,7 @@ function start() {
                 const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-                var demiseconds = Math.floor(timeDifference % (1000) / 1000);
+                const demiseconds = Math.floor(timeDifference % (1000) / 1000);
 
                 result.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s ${demiseconds}d`;
             }
